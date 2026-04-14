@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aaf-multichannel-creator"
+version = "1.0.0"
+description = "Create Pro Tools-compatible multichannel AAF files (stereo, 5.1, 7.1) using the Audio Channel Combiner pattern."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Alexey Mohr" }]
+keywords = ["aaf", "pro-tools", "stereo", "surround", "5.1", "7.1", "multichannel", "audio", "post-production", "avid", "media-composer"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: Multimedia :: Sound/Audio :: Editors",
+]
+dependencies = ["pyaaf2>=1.7"]
+
+[project.scripts]
+aaf-multichannel-creator = "aaf_multichannel_creator:main"
+
+[project.urls]
+Repository = "https://github.com/alexeymohr/aaf-multichannel-creator"
